@@ -3,17 +3,9 @@ package project.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebElement;
 import project.base.BasePage;
 
 public class CommonPage extends BasePage {
-
-    /**
-     * повертає елемент з id content
-     */
-    public WebElement getContent() throws NoSuchElementException {
-        return findElement(By.xpath("//*[@id='content']"));
-    }
 
     /**
      * клікає на лінку з назвою Brands

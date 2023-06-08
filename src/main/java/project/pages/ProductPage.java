@@ -7,6 +7,6 @@ import org.openqa.selenium.WebElement;
 public class ProductPage extends CommonPage {
 
     public WebElement getBrandLink(String brand) throws NoSuchElementException {
-        return getContent().findElement(By.xpath("//a[text()='" + brand + "']"));
+        return findElement(By.xpath("//*[@id='content']//a[text()='" + brand + "']"));
     }
 }
