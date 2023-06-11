@@ -1,10 +1,11 @@
 package project.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
+import static project.constants.Locators.WELCOME_TITLE_LOCATOR;
 
 public class WelcomePage extends CommonPage {
     public WebElement getTitleElement() {
-        return findElement(By.xpath("//title[text()='Welcome']"));
+        return findElement(WELCOME_TITLE_LOCATOR );
     }
 }

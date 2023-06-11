@@ -1,9 +1,10 @@
 package project.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.NoSuchElementException;
 import project.base.BasePage;
+
+import static project.constants.Locators.*;
 
 public class CommonPage extends BasePage {
 
@@ -12,22 +13,22 @@ public class CommonPage extends BasePage {
      */
     public void clickOnBrandsLink()
             throws NoSuchElementException, ElementClickInterceptedException, InterruptedException {
-        findElementAndClickWithScroll(By.xpath("//a[text()='Brands']"));
+        findElementAndClickWithScroll(BRANDS_LINK_LOCATOR);
     }
 
     public void clickOnMyAccount()
             throws NoSuchElementException, ElementClickInterceptedException {
-        findElementAndClick(By.xpath("//span[text()='My Account']"));
+        findElementAndClick(MY_ACCOUNT_LINK_LOCATOR);
     }
 
     public void clickOnRegister()
             throws NoSuchElementException, ElementClickInterceptedException {
-        findElementAndClick(By.xpath("//a[@class='dropdown-item' and text()='Register']"));
+        findElementAndClick(REGISTER_LINK_LOCATOR);
     }
 
     public void clickOnLogin()
             throws NoSuchElementException, ElementClickInterceptedException {
-        findElementAndClick(By.xpath("//a[@class='dropdown-item' and text()='Login']"));
+        findElementAndClick(LOGIN_LINK_LOCATOR);
     }
 
 
