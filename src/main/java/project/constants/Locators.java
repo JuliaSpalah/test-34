@@ -14,6 +14,11 @@ public class Locators {
     public static final By PASSWORD_INPUT_LOCATOR = By.id("input-password");
     public static final By CHECKBOX_AGREE_LOCATOR = By.xpath("//input[@name='agree']");
     public static final By CONTINUE_BUTTON_LOCATOR = By.xpath("//button[text()='Continue']");
+    public static final By DESKTOPS_NAVBAR_LOCATOR = By.xpath("//div[@id='narbar-menu']//a[text()='Desktops']");
+    public static final By SHOW_ALL_DESKTOPS_LOCATOR = By.xpath("//div[@id='narbar-menu']//a[text()='Show All Desktops']");
+    public static final By SHOW_OPTION_SELECTED_VALUE_LOCATOR = By.xpath("//div[label[text()='Show']]//option[@selected]");
+    public static final By SORT_BY_OPTION_SELECTED_VALUE_LOCATOR = By.xpath("//div[label[text()='Sort By']]//option[@selected]");
+    public static final By PRODUCT_THUMBNAIL_LOCATOR = By.xpath("//div[@class='product-thumb']");
 
 
 }

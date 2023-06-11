@@ -31,5 +31,14 @@ public class CommonPage extends BasePage {
         findElementAndClick(LOGIN_LINK_LOCATOR);
     }
 
+    public void hoverOverDesktops()
+            throws NoSuchElementException, ElementClickInterceptedException {
+        findElementAndHover(DESKTOPS_NAVBAR_LOCATOR);
+    }
+
+    public void clickOnShowAllDesktops()
+            throws NoSuchElementException, ElementClickInterceptedException {
+        findElementAndClick(SHOW_ALL_DESKTOPS_LOCATOR);
+    }
 
 }
