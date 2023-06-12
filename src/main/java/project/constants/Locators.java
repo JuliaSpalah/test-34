@@ -19,6 +19,10 @@ public class Locators {
     public static final By SHOW_OPTION_SELECTED_VALUE_LOCATOR = By.xpath("//div[label[text()='Show']]//option[@selected]");
     public static final By SORT_BY_OPTION_SELECTED_VALUE_LOCATOR = By.xpath("//div[label[text()='Sort By']]//option[@selected]");
     public static final By PRODUCT_THUMBNAIL_LOCATOR = By.xpath("//div[@class='product-thumb']");
+    public static final By SHOW_DROPDOWN_LOCATOR = By.xpath("//div[label[text()='Show']]//select");
+    public static final By SHOW_DROPDOWN_ITEM_25_LOCATOR = By.xpath("//div[label[text()='Show']]//option[text()='25']");
+    public static final By PAGES_SHOWN_LOCATOR = By.xpath("//*[@id='content']//div[@class='col-sm-6 text-end']");
+
 
 
 }

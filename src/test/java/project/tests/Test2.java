@@ -24,5 +24,21 @@ public class Test2 extends BaseTest {
             fail("Can`t check dropdown values");
         }
 
+        try {
+            productPage.clickOnShowDropDown();
+            productPage.clickOnShowDropDownItem25();
+
+        } catch (Exception e) {
+            fail("Fail to select dropdown item");
+        }
+        assertTrue(productPage.getProductsThumbnailsCount() <= 25, "Products thumbnails count should be less or equals 25");
+        assertTrue(productPage.getProductsThumbnailsCount() == 12, "Products thumbnails count should be equals 12");
+
+        try {
+            assertEquals(productPage.getPagesShownText(), "Showing 1 to 12 of 12 (1 Pages)", "Text should be Showing 1 to 12 of 12 (1 Pages)");
+        } catch (Exception e) {
+            fail("Can`t get pages shown text");
+        }
+
     }
 }

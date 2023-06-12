@@ -41,4 +41,6 @@ public class CommonPage extends BasePage {
         findElementAndClick(SHOW_ALL_DESKTOPS_LOCATOR);
     }
 
+
+
 }
