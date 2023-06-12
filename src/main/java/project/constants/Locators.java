@@ -22,7 +22,11 @@ public class Locators {
     public static final By SHOW_DROPDOWN_LOCATOR = By.xpath("//div[label[text()='Show']]//select");
     public static final By SHOW_DROPDOWN_ITEM_25_LOCATOR = By.xpath("//div[label[text()='Show']]//option[text()='25']");
     public static final By PAGES_SHOWN_LOCATOR = By.xpath("//*[@id='content']//div[@class='col-sm-6 text-end']");
-
+    public static final By SORT_BY_DROPDOWN_LOCATOR = By.xpath("//div[label[text()='Sort By']]//select");
+    public static final By SORT_BY_ORDER_NAME_AZ_LOCATOR = By.xpath("//div[label[text()='Sort By']]//option[text()='Name (A - Z)']");
+    public static final By PRODUCT_NAME_LOCATOR = By.xpath("//div[@class='product-thumb']//div[@class='description']//a");
+    public static final By SORT_BY_ORDER_PRICE_LOW_TO_HIGH_LOCATOR = By.xpath("//div[label[text()='Sort By']]//option[text()='Price (Low > High)']");
+    public static final By PRODUCT_PRICES_LOCATOR = By.xpath("//div[@class='product-thumb']//div[@class='description']//span[@class='price-new']");
 
 
 }

@@ -6,7 +6,7 @@ import static org.testng.Assert.*;
 
 public class Test2 extends BaseTest {
     @Test
-    public void hoverOverDesktops() {
+    public void hoverOverDesktopsTest() {
         mainPage.open();
         try {
             mainPage.hoverOverDesktops();
