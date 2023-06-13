@@ -84,4 +84,11 @@ public class ProductPage extends CommonPage {
                 .collect(Collectors.toList());
     }
 
+    public double getProductPrice()
+            throws NoSuchElementException {
+       String priceText = findElement(PRODUCT_PRICE_LOCATOR).getText();
+       String priceTextWithoutSign =  StringUtils.removeDollarSign(priceText);
+       return Double.parseDouble(priceTextWithoutSign);
+    }
+
 }

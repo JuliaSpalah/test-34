@@ -41,6 +41,15 @@ public class CommonPage extends BasePage {
         findElementAndClick(SHOW_ALL_DESKTOPS_LOCATOR);
     }
 
+    public String getCurrencySign()
+            throws NoSuchElementException {
+        return findElement(CURRENCY_SIGN_LOCATOR).getText();
+    }
+
+    public void clickOnCurrency()
+            throws NoSuchElementException, ElementClickInterceptedException {
+        findElementAndClick(CURRENCY_DROPDOWN_LOCATOR);
+    }
 
 
 }

@@ -27,6 +27,11 @@ public class Locators {
     public static final By PRODUCT_NAME_LOCATOR = By.xpath("//div[@class='product-thumb']//div[@class='description']//a");
     public static final By SORT_BY_ORDER_PRICE_LOW_TO_HIGH_LOCATOR = By.xpath("//div[label[text()='Sort By']]//option[text()='Price (Low > High)']");
     public static final By PRODUCT_PRICES_LOCATOR = By.xpath("//div[@class='product-thumb']//div[@class='description']//span[@class='price-new']");
+    public static final By CURRENCY_DROPDOWN_LOCATOR = By.xpath("//span[@class='d-none d-md-inline' and text()='Currency']");
+    public static final By CURRENCY_SIGN_LOCATOR = By.xpath("//a[span[text()='Currency']]//strong");
+        public static final By IPHONE_LOCATOR = By.xpath("//div[@class='product-thumb']//a[text()='iPhone']");
+        public static final By PRODUCT_PRICE_LOCATOR = By.xpath("//h2/span[@class='price-new']");
+
 
 
 }
