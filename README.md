@@ -25,6 +25,15 @@ Test #2
 8. Check that 12 products now dispayed
 9. Check that text 'Showing 1 to 12 of 12 (1 Pages)' displays on the bottom of the page
 
+Test#2_1
+1. Go to the https://demo.opencart.com/
+2. Click on My Account
+3. Click Login
+4. Click Forgotten Password
+5. Fill email
+6. Click continue button
+7. Check Alert message " Warning: The E-Mail Address was not found in our records! "
+
 Test #3
 1. Go to the https://demo.opencart.com/
 2. Hower over Desktops from top menu

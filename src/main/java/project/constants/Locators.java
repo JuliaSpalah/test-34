@@ -10,7 +10,7 @@ public class Locators {
     public static final By WELCOME_TITLE_LOCATOR = By.xpath("//title[text()='Welcome']");
     public static final By FIRST_NAME_INPUT_LOCATOR = By.id("input-firstname");
     public static final By LAST_NAME_INPUT_LOCATOR = By.id("input-lastname");
-    public static final By EMAIL_INPUT_LOCATOR = By.id("input-email");
+    public static final By EMAIL_INPUT_REGISTER_PAGE_LOCATOR = By.id("input-email");
     public static final By PASSWORD_INPUT_LOCATOR = By.id("input-password");
     public static final By CHECKBOX_AGREE_LOCATOR = By.xpath("//input[@name='agree']");
     public static final By CONTINUE_BUTTON_LOCATOR = By.xpath("//button[text()='Continue']");
@@ -38,6 +38,11 @@ public class Locators {
     public static final By OLD_PRICE_LOCATOR = By.xpath("//span[@class='price-old']");
     public static final By NEW_PRICE_FIRST_PRODUCT_LOCATOR = By.xpath("//div[h4/a[text()='Canon EOS 5D'] and @class='description']//span[@class='price-new']");
     public static final By PRICE_TAX_SECOND_PRODUCT_LOCATOR = By.xpath("//div[h4/a[text()='Nikon D300'] and @class='description']//span[@class='price-tax']");
+    public static final By FORGOTTEN_PASSWORD_LOCATOR = By.xpath("//a[@class='list-group-item' and text()='Forgotten Password']");
+    public static final By EMAIL_INPUT_FORGOTTEN_PASSWORD_LOCATOR = By.xpath("//*[@id='input-email']");
+    public static final By CONTINUE_BUTTON_FORGOTTEN_PASSWORD_LOCATOR = By.xpath("//button[text()='Continue']");
+    public static final By ALERT_MESSAGE_LOCATOR = By.xpath("//div[@id='alert']//div");
+
 
 
 }

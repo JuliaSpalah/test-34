@@ -6,7 +6,7 @@ import project.base.BasePage;
 
 import static project.constants.Locators.*;
 
-public class CommonPage extends BasePage {
+public abstract class CommonPage extends BasePage {
 
     /**
      * клікає на лінку з назвою Brands
@@ -64,6 +64,11 @@ public class CommonPage extends BasePage {
     public void clickOnCameras()
             throws NoSuchElementException, ElementClickInterceptedException {
         findElementAndClick(CAMERAS_LOCATOR);
+    }
+
+    public String getAlertMessage()
+            throws NoSuchElementException {
+        return findElement(ALERT_MESSAGE_LOCATOR).getText();
     }
 
 

@@ -16,7 +16,7 @@ public class RegisterPage extends CommonPage {
     }
 
     public void setEmail(String email) {
-        findElementAndSendKeys(EMAIL_INPUT_LOCATOR, email);
+        findElementAndSendKeys(EMAIL_INPUT_REGISTER_PAGE_LOCATOR, email);
     }
 
     public void setPassword(String password) {
@@ -31,5 +31,10 @@ public class RegisterPage extends CommonPage {
     public void clickOnContinueButton()
             throws NoSuchElementException, ElementClickInterceptedException, InterruptedException {
         findElementAndClickWithScroll(CONTINUE_BUTTON_LOCATOR);
+    }
+
+    public void clickOnForgottenPassword()
+            throws NoSuchElementException, ElementClickInterceptedException{
+        findElementAndClick(FORGOTTEN_PASSWORD_LOCATOR);
     }
 }

@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class BasePage {
+public abstract class BasePage {
     protected final int SCROLL_TIMEOUT_SECONDS = 1;
 
     protected WebDriverProvider driverProvider;
@@ -22,7 +22,7 @@ public class BasePage {
         return driverProvider.getDriver().findElement(by);
     }
 
-    protected List<WebElement> findElements(By by)  {
+    protected List<WebElement> findElements(By by) {
         return driverProvider.getDriver().findElements(by);
     }
 
@@ -57,18 +57,20 @@ public class BasePage {
 
     protected WebElement scrollToElement(WebElement element) throws InterruptedException {
         driverProvider.getJavaScriptExecutor().executeScript("arguments[0].scrollIntoView(true);", element);
-        TimeUnit.SECONDS.sleep(SCROLL_TIMEOUT_SECONDS);
+        waitSeconds(SCROLL_TIMEOUT_SECONDS);
         return element;
     }
 
-    protected WebElement findElementAndHover(By by){
+    protected WebElement findElementAndHover(By by) {
         WebElement element = findElement(by);
         Actions actions = new Actions(driverProvider.getDriver());
         actions.moveToElement(element).perform();
         return element;
     }
 
-
+    public void waitSeconds(long seconds) throws InterruptedException {
+        TimeUnit.SECONDS.sleep(seconds);
+    }
 
 
 }

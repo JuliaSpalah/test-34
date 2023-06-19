@@ -3,10 +3,7 @@ package project.tests;
 import org.junit.After;
 import org.junit.Before;
 import project.base.WebDriverProvider;
-import project.pages.MainPage;
-import project.pages.ProductPage;
-import project.pages.RegisterPage;
-import project.pages.WelcomePage;
+import project.pages.*;
 
 public class BaseTest {
 
@@ -15,6 +12,7 @@ public class BaseTest {
     protected final ProductPage productPage = new ProductPage();
     protected final RegisterPage registerPage = new RegisterPage();
     protected final WelcomePage welcomePage = new WelcomePage();
+    protected final AccountPage accountPage = new AccountPage();
 
 
     @Before
@@ -24,6 +22,7 @@ public class BaseTest {
         productPage.setWebDriverProvider(webDriverProvider);
         registerPage.setWebDriverProvider(webDriverProvider);
         welcomePage.setWebDriverProvider(webDriverProvider);
+        accountPage.setWebDriverProvider(webDriverProvider);
     }
 
     @After
