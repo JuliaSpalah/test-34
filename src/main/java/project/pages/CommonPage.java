@@ -51,5 +51,20 @@ public class CommonPage extends BasePage {
         findElementAndClick(CURRENCY_DROPDOWN_LOCATOR);
     }
 
+    public void clickOnEuro()
+            throws NoSuchElementException, ElementClickInterceptedException {
+        findElementAndClick(EURO_CURRENCY_LOCATOR);
+    }
+
+    public void clickOnPoundSterling()
+            throws NoSuchElementException, ElementClickInterceptedException {
+        findElementAndClick(POUND_STERLING_CURRENCY_LOCATOR);
+    }
+
+    public void clickOnCameras()
+            throws NoSuchElementException, ElementClickInterceptedException {
+        findElementAndClick(CAMERAS_LOCATOR);
+    }
+
 
 }

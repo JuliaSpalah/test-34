@@ -29,9 +29,15 @@ public class Locators {
     public static final By PRODUCT_PRICES_LOCATOR = By.xpath("//div[@class='product-thumb']//div[@class='description']//span[@class='price-new']");
     public static final By CURRENCY_DROPDOWN_LOCATOR = By.xpath("//span[@class='d-none d-md-inline' and text()='Currency']");
     public static final By CURRENCY_SIGN_LOCATOR = By.xpath("//a[span[text()='Currency']]//strong");
-        public static final By IPHONE_LOCATOR = By.xpath("//div[@class='product-thumb']//a[text()='iPhone']");
-        public static final By PRODUCT_PRICE_LOCATOR = By.xpath("//h2/span[@class='price-new']");
-
+    public static final By IPHONE_LOCATOR = By.xpath("//div[@class='product-thumb']//a[text()='iPhone']");
+    public static final By PRODUCT_PRICE_LOCATOR = By.xpath("//h2/span[@class='price-new']");
+    public static final By EURO_CURRENCY_LOCATOR = By.xpath("//a[text()='€ Euro']");
+    public static final By POUND_STERLING_CURRENCY_LOCATOR = By.xpath("//a[text()='£ Pound Sterling']");
+    public static final By CAMERAS_LOCATOR = By.xpath("//a[@class='nav-link' and text()='Cameras']");
+    public static final By PRODUCT_THUMBNAILS_CAMERAS_LOCATOR = By.xpath("//div[@class='product-thumb']");
+    public static final By OLD_PRICE_LOCATOR = By.xpath("//span[@class='price-old']");
+    public static final By NEW_PRICE_FIRST_PRODUCT_LOCATOR = By.xpath("//div[h4/a[text()='Canon EOS 5D'] and @class='description']//span[@class='price-new']");
+    public static final By PRICE_TAX_SECOND_PRODUCT_LOCATOR = By.xpath("//div[h4/a[text()='Nikon D300'] and @class='description']//span[@class='price-tax']");
 
 
 }

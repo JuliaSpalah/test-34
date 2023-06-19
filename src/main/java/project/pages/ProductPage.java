@@ -79,16 +79,33 @@ public class ProductPage extends CommonPage {
         return findElements(PRODUCT_PRICES_LOCATOR)
                 .stream()
                 .map(WebElement::getText)
-                .map(StringUtils::removeDollarSign)
-                .map(Double::parseDouble)
+                .map(StringUtils::extractPriceValue)
                 .collect(Collectors.toList());
     }
 
     public double getProductPrice()
             throws NoSuchElementException {
-       String priceText = findElement(PRODUCT_PRICE_LOCATOR).getText();
-       String priceTextWithoutSign =  StringUtils.removeDollarSign(priceText);
-       return Double.parseDouble(priceTextWithoutSign);
+        String priceText = findElement(PRODUCT_PRICE_LOCATOR).getText();
+        return StringUtils.extractPriceValue(priceText);
+    }
+
+    public int getProductAmount() {
+        return findElements(PRODUCT_THUMBNAILS_CAMERAS_LOCATOR).size();
+    }
+
+    public double getOldPriceCanon() {
+        String oldPriceText = findElement(OLD_PRICE_LOCATOR).getText();
+        return StringUtils.extractPriceValue(oldPriceText);
+    }
+
+    public double getFirstProductNewPrice() {
+        String newPriceText = findElement(NEW_PRICE_FIRST_PRODUCT_LOCATOR).getText();
+        return StringUtils.extractPriceValue(newPriceText);
+    }
+
+    public double getSecondProductTaxPrice() {
+        String taxPriceText = findElement(PRICE_TAX_SECOND_PRODUCT_LOCATOR).getText();
+        return StringUtils.extractPriceValue(taxPriceText);
     }
 
 }

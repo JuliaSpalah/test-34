@@ -26,7 +26,33 @@ public class Test4 extends BaseTest {
         try {
             assertEquals(productPage.getProductPrice(), 123.20, "The price is incorrect");
         } catch (Exception e) {
-            fail("Can`t verify price");
+            fail("Can`t verify the price in USD");
+        }
+
+        try {
+            productPage.clickOnCurrency();
+            productPage.clickOnEuro();
+        } catch (Exception e) {
+            fail("Can`t select EUR currency");
+        }
+
+        try {
+            assertEquals(productPage.getProductPrice(), 112.65, "The price is incorrect");
+        } catch (Exception e) {
+            fail("Can`t verify the price in EUR");
+        }
+
+        try {
+            productPage.clickOnCurrency();
+            productPage.clickOnPoundSterling();
+        } catch (Exception e) {
+            fail("Can`t select GBP currency");
+        }
+
+        try{
+            assertEquals(productPage.getProductPrice(), 100.54, "The price is incorrect");
+        }catch (Exception e){
+            fail("Can`t verify the price in GBP");
         }
 
 
